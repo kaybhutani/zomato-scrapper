@@ -1,5 +1,4 @@
 from selenium import webdriver
-driver = webdriver.Firefox(executable_path=".\\geckodriver.exe")
 def get_number(driver,url) :
     driver.get(url)
     num_elements = driver.find_elements_by_class_name("kKemRh")
